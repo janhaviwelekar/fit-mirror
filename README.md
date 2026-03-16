@@ -34,16 +34,16 @@ Paste URL  →  Claude AI reads it  →  MediaPipe finds your body  →  Garment
 | SHEIN | shein.com |
 | Mango | mango.com |
 | Forever 21 | forever21.com |
-| **Any other site** | Claude still attempts extraction |
+
 
 ---
 
 ## ⚡ Features
 
-- **Universal URL input** — paste any product link and Claude infers the garment from the URL slug, path segments, and its knowledge of each retailer's catalog
+- **Universal URL input** — paste any product link and it infers the garment from the URL slug, path segments, and its knowledge of each retailer's catalog
 - **Real-time body tracking** — MediaPipe Pose detects 33 body keypoints at ~15fps; garment anchors to live shoulder and hip positions
 - **7 garment renderers** — each shape drawn with gradients, seams, necklines, buttons, and fold details via HTML5 Canvas
-- **Color swatches** — switch between up to 3 product colors extracted by Claude; overlay updates instantly
+- **Color swatches** — switch between up to 3 product colors extracted; overlay updates instantly
 - **Fit controls** — opacity slider, scale slider, vertical position nudge, size selector (XS–XXL)
 - **Session history** — last 8 tried items stored in-session; one-click reload
 - **Photo capture** — download the current frame as a PNG with a single click
@@ -70,7 +70,7 @@ npx serve .
 - Click **Enable Camera** and allow access
 - Paste any clothing product URL into the box
 - Press **Enter** or click **Analyse & Try On**
-- Wait 1–3 seconds for Claude to extract the garment
+- Wait 1–3 seconds for it to extract the garment
 - See it live on you — move around!
 
 > **Note:** Requires an active internet connection for MediaPipe CDN, Google Fonts, and the Anthropic API.
@@ -128,7 +128,7 @@ Each file has exactly one job. No file mixes concerns.
 URL Flow:
   User pastes URL
     → main.js validates
-      → api.js calls Claude
+      → api.js 
         → garment JSON returned
           → garment.js writes to state
             → renderer.js draws on next frame
